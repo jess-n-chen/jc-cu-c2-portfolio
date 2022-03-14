@@ -306,3 +306,97 @@ footer {
 footer p {
   color: var(--secondary-color-gray);
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  /* this will be applied on any screen smaller than 980px */
+  h3 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .section-links {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  /* this will be applied on any screen between 768px and 575px */
+  h1 {
+    font-size: 120px;
+  }
+
+  h2 {
+    font-size: 52px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image {
+    text-align: center;
+  }
+
+  .about-image img {
+    border-radius: 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    flex: 10;
+  }
+
+  .project-tile-primary .project-image {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .section-links {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  /* this will be applied on any screen smaller than 575px */
+  h1 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 5vh;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .secondary-projects {
+    padding-bottom: 0;
+  }
+  .secondary-project-tile {
+    margin: 20px auto;
+  }
+
+  .section-links {
+    font-size: 22px;
+  }
+}
