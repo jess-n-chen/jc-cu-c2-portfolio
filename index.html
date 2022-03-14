@@ -43,6 +43,7 @@
     </header>
     <!-- hero section -->
     <section class="hero">
+      <!-- hero background video -->
       <video
         playsinline
         autoplay
@@ -55,9 +56,11 @@
           type="video/mp4"
         />
       </video>
+
+      <!-- hero text overlay -->
       <div class="hero-cta">
         <h1>jessica chen</h1>
-        <h2>a developer-in-training based in New York</h2>
+        <p>a developer-in-training based in New York</p>
       </div>
       <div class="hero-button">
         <a href="#my-work" class="btn-hero" title="View Projects Link">
@@ -67,11 +70,11 @@
     </section>
 
     <!-- about me section -->
-    <section id="about-me" class="about">
-      <div class="section-title">
-        <h3>About Me</h3>
+    <section id="about-me" class="section-primary">
+      <div class="section-title-primary">
+        <h2>About Me</h2>
       </div>
-      <div class="about-info">
+      <div class="about-container flex-container">
         <div class="about-image">
           <img
             src="/assets/images/IMG_0519.png"
@@ -85,11 +88,13 @@
             currently utilizing that passion to learn full-stack development
             through Columbia's bootcamp.
           </p>
+          <br />
           <p>
             I also have front-end development experience through SheCodes in
             HTML, CSS, and Javascript. I have integrated with APIs and worked
             with React & Bootstrap Libraries.
           </p>
+          <br />
           <p>
             During the day, I help customers integrate their content management
             systems with Smartling as a Solutions Architect!
@@ -99,43 +104,140 @@
     </section>
 
     <!-- my work section -->
-    <section id="my-work">
-      <div class="section-title">
-        <h3>My Work</h3>
+    <section id="my-work" class="projects">
+      <div class="project-container">
+        <div class="section-title-secondary">
+          <h2>My Work</h2>
+        </div>
+        <article class="project-tile-primary flex-container">
+          <div class="project-image">
+            <a
+              href="https://xenodochial-visvesvaraya-32ca77.netlify.app/"
+              target="_blank"
+              class="image-link"
+              title="Weather App Link"
+            >
+              <img src="/assets/images/weather-1.png" alt="Weather App Image" />
+            </a>
+          </div>
+          <div class="project-desc">
+            <h3>Weather App</h3>
+            <p>
+              A weather app written in Vanilla JS and Bootstrap that provides
+              real-time data of your desired location!
+            </p>
+            <a
+              href="https://xenodochial-visvesvaraya-32ca77.netlify.app/"
+              target="_blank"
+              class="section-links"
+              title="Weather App Link"
+              >Launch Weather App</a
+            >
+          </div>
+        </article>
+        <div class="secondary-projects">
+          <article class="secondary-project-tile">
+            <a
+              href="https://priceless-payne-e728b9.netlify.app/"
+              target="_blank"
+              class="image-link"
+              title="Dictionary App Link"
+            >
+              <img
+                src="/assets/images/dictionary-app.png"
+                alt="Dictionary App Image"
+              />
+            </a>
+            <div class="project-desc">
+              <h3>Dictionary App</h3>
+              <p>
+                A dictionary app written with React.JS to help you learn unknown
+                words faster!
+              </p>
+              <a
+                href="https://priceless-payne-e728b9.netlify.app/"
+                target="_blank"
+                class="section-links"
+                title="Dictionary App Link"
+                >Launch Dictionary App</a
+              >
+            </div>
+          </article>
+          <article class="secondary-project-tile">
+            <a
+              href="https://jolly-babbage-c61314.netlify.app/"
+              target="_blank"
+              class="image-link"
+              title="Weather App React Link"
+            >
+              <img
+                src="/assets/images/weather.png"
+                alt="Weather App V2 Image"
+              />
+            </a>
+            <div class="project-desc">
+              <h3>Weather App (React)</h3>
+              <p>
+                Another version of my weather app written in React.JS that
+                provides real-time data!
+              </p>
+              <a
+                href="https://jolly-babbage-c61314.netlify.app/"
+                target="_blank"
+                class="section-links"
+                title="Weather App React Link"
+                >Launch Weather (React) App</a
+              >
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- contact me section -->
-    <section id="contact-me">
-      <div class="section-title">
-        <h3>Contact Me</h3>
+    <section id="contact-me" class="section-primary">
+      <div class="section-title-primary">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact-container">
+        <div class="contact-icons">
+          <p>
+            Github:
+            <a
+              href="https://github.com/jess-n-chen/jc-cu-c2-portfolio"
+              target="_blank"
+              title="Github Link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </p>
+        </div>
+        <div class="contact-icons">
+          <p>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/jessica-chen-pmp-a37208122/"
+              target="_blank"
+              title="LinkedIn Link"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </p>
+        </div>
+        <div class="contact-icons">
+          <p>
+            Email:
+            <a href="mailto:jessicachen28@gmail.com" title="Email Link">
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- footer section -->
     <footer>
-      <div class="text-center">
-        <a
-          href="https://github.com/jess-n-chen/portfolio-project"
-          target="_blank"
-          title="Github Link"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jessica-chen-pmp-a37208122/"
-          target="_blank"
-          title="LinkedIn Link"
-        >
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="mailto:jessicachen28@gmail.com" title="Email Link">
-          <i class="fas fa-paper-plane"></i>
-        </a>
-        <div class="row">
-          <p>author: jessica chen</p>
-        </div>
-      </div>
+      <p>author: jessica chen</p>
     </footer>
   </body>
 </html>

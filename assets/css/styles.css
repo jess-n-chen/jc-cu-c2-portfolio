@@ -5,12 +5,12 @@
   --nav-color: rgba(0, 0, 0, 0.55);
   --nav-color-active: rgba(0, 0, 0, 0.9);
   --paragraph-font-family: "Quicksand", sans-serif;
-  --primary-color: #596e79;
-  --primary-color-half-opacity: rgba(89, 110, 121, 0.5);
-  --secondary-color-1: #fff;
-  --secondary-color-2: #dfd3c3;
-  --secondary-color-3: #f0ece2;
-  --secondary-color-3-half-opacity: rgba(240, 236, 226, 0.5);
+  --primary-color-gray: #596e79;
+  --primary-color-gray-half-opacity: rgba(89, 110, 121, 0.5);
+  --secondary-color-white: #fff;
+  --secondary-color-beige: #f0ece2;
+  --secondary-color-beige-half-opacity: rgba(240, 236, 226, 0.25);
+  --secondary-color-lavender: rgba(203, 195, 227, 0.5);
   --text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -25,31 +25,36 @@ body {
   font-family: var(--paragraph-font-family);
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
-  color: var(--secondary-color-1);
+  color: var(--secondary-color-white);
   font-family: "Dancing Script", cursive;
-  font-size: 96px !important;
+  font-size: 150px;
   text-shadow: var(--text-shadow);
 }
 
 h2 {
-  color: var(--secondary-color-1);
+  color: var(--secondary-color-beige);
   font-family: var(--heading-font-family);
-  font-size: 48px !important;
-  font-weight: 200 !important;
-  text-shadow: var(--text-shadow);
-}
-
-h3 {
-  color: var(--secondary-color-2);
-  font-size: 72px !important;
-  font-weight: 200 !important;
-  opacity: 0.8 !important;
+  font-size: 72px;
+  font-weight: 200;
   text-align: center;
 }
 
+h3 {
+  color: var(--secondary-color-white);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+}
+
 p {
-  color: var(--secondary-color-3);
+  color: var(--secondary-color-beige);
   font-size: 18px;
   line-height: 1.5;
 }
@@ -60,7 +65,7 @@ section {
 
 /* Header Styling */
 header {
-  background-color: var(--secondary-color-1);
+  background-color: var(--secondary-color-white);
   display: flex;
   justify-content: flex-start;
   position: -webkit-sticky;
@@ -94,6 +99,7 @@ header nav ul li {
   padding: 5px 15px;
 }
 
+/* Hero Section Styling */
 .hero {
   align-items: center;
   display: flex;
@@ -120,43 +126,56 @@ header nav ul li {
   text-shadow: var(--text-shadow);
 }
 
-.hero-cta h1 {
-  color: var(--secondary-color-1);
-  font-size: 150px !important;
-}
-
-.hero-cta h2 {
-  color: var(--secondary-color-1);
-  font-size: 24px !important;
-  font-weight: 200 !important;
+.hero-cta p {
+  color: var(--secondary-color-white);
+  font-size: 24px;
   text-align: center;
 }
 
+/* Hero Button & Section Button Styling */
 .btn-hero {
-  background: var(--primary-color-half-opacity);
-  border: 2px var(--secondary-color-1) solid !important;
-  border-radius: 0px !important;
+  background: var(--primary-color-gray);
+  font-weight: 800 !important;
+}
+
+.section-links {
+  background: var(--primary-color-gray-half-opacity);
+  font-weight: 600;
+}
+
+.btn-hero,
+.section-links {
+  border: 2px var(--secondary-color-white) solid;
+  border-radius: 0px;
   box-shadow: var(--box-shadow);
-  color: var(--secondary-color-1) !important;
+  color: var(--secondary-color-white);
   display: inline-block;
-  font-size: 18px !important;
-  font-weight: 600 !important;
+  font-size: 18px;
   padding: 10px 30px;
-  text-decoration: none;
   text-shadow: var(--text-shadow);
   text-transform: uppercase;
 }
 
-.btn-hero:hover {
-  background: var(--secondary-color-1);
-  color: #000 !important;
+.btn-hero:hover,
+.section-links:hover {
+  background: var(--secondary-color-white);
+  color: #000;
 }
 
-/* About Me Section Styling */
-.about {
-  background: var(--primary-color-half-opacity);
+/* General Section Styling */
+.section-title-primary {
+  border-bottom: 1px solid var(--primary-color-gray);
+  margin: 0 auto;
+  width: 50%;
 }
-.about-info {
+.section-title-secondary {
+  border-bottom: 1px solid var(--secondary-color-beige);
+  margin: 0 auto;
+  text-shadow: var(--text-shadow);
+  width: 50%;
+}
+
+.flex-container {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -166,6 +185,16 @@ header nav ul li {
   width: 80%;
 }
 
+.section-primary {
+  background: var(--secondary-color-lavender);
+}
+
+.section-primary h2,
+.section-primary p {
+  color: var(--primary-color-gray);
+}
+
+/* About Me Section Styling */
 .about-image {
   flex: 1 30%;
   margin-right: 20px;
@@ -178,4 +207,102 @@ header nav ul li {
 
 .about-text {
   flex: 12;
+}
+
+/* My Work Section Section */
+.projects {
+  background-image: url("/assets/images/pexels-natalie-1201538.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+.project-container {
+  background: var(--primary-color-gray-half-opacity);
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.project-tile-primary .project-image {
+  flex: 2 60%;
+  margin-right: 40px;
+}
+
+.project-tile-primary .project-image img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.project-tile-primary .project-desc {
+  flex: 10;
+}
+
+.secondary-projects {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+}
+
+.secondary-project-tile {
+  flex: 1;
+  margin: 20px;
+}
+
+.secondary-project-tile img {
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+.secondary-project-tile .project-desc {
+  flex: 5;
+  text-align: center;
+}
+
+.image-link:hover {
+  border: 2px var(--secondary-color-white) solid;
+  border-radius: 0px;
+  box-shadow: var(--box-shadow);
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.section-links {
+  margin-top: 15px;
+}
+
+/* Contact Section Styling */
+.contact-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-icons {
+  margin: 20px;
+}
+
+.fab,
+.fas {
+  color: var(--primary-color-gray);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--secondary-color-white);
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  color: var(--secondary-color-gray);
 }
