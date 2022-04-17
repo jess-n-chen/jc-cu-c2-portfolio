@@ -211,7 +211,7 @@ header nav ul li {
 
 /* My Work Section Section */
 .projects {
-  background-image: url("/assets/images/pexels-natalie-1201538.jpg");
+  background-image: url("../images/pexels-natalie-1201538.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
