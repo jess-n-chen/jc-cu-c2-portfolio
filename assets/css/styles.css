@@ -32,21 +32,21 @@ a {
 h1 {
   color: var(--secondary-color-white);
   font-family: "Dancing Script", cursive;
-  font-size: 150px;
+  font-size: 9.375rem;
   text-shadow: var(--text-shadow);
 }
 
 h2 {
   color: var(--secondary-color-beige);
   font-family: var(--heading-font-family);
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 200;
   text-align: center;
 }
 
 h3 {
   color: var(--secondary-color-white);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 2;
   text-align: center;
@@ -55,12 +55,12 @@ h3 {
 
 p {
   color: var(--secondary-color-beige);
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 
 section {
-  padding: 60px;
+  padding: 3.75rem;
 }
 
 /* Hero Section Styling */
@@ -108,13 +108,13 @@ section {
 
 .btn-hero,
 .section-links {
-  border: 2px var(--secondary-color-white) solid;
+  border: 0.125rem var(--secondary-color-white) solid;
   border-radius: 0px;
   box-shadow: var(--box-shadow);
   color: var(--secondary-color-white);
   display: inline-block;
-  font-size: 18px;
-  padding: 10px 30px;
+  font-size: 1.125rem;
+  padding: 0.625rem 1.875rem;
   text-shadow: var(--text-shadow);
   text-transform: uppercase;
 }
@@ -132,7 +132,7 @@ section {
   width: 50%;
 }
 .section-title-secondary {
-  border-bottom: 1px solid var(--secondary-color-beige);
+  border-bottom: 0.063rem solid var(--secondary-color-beige);
   margin: 0 auto;
   text-shadow: var(--text-shadow);
   width: 50%;
@@ -143,8 +143,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 50px auto;
-  padding-bottom: 50px;
+  margin: 3.125rem auto;
+  padding-bottom: 3.125rem;
   width: 80%;
 }
 
@@ -160,7 +160,7 @@ section {
 /* About Me Section Styling */
 .about-image {
   flex: 1 30%;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .about-image img {
@@ -183,58 +183,31 @@ section {
 
 .project-container {
   background: var(--primary-color-gray-half-opacity);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   padding: 5%;
 }
 
-.project-tile-primary .project-image {
-  flex: 2 60%;
-  margin-right: 40px;
-}
-
-.project-tile-primary .project-image img {
-  border-radius: 10px;
-  max-width: 100%;
-}
-
-.project-tile-primary .project-desc {
-  flex: 10;
-}
-
-.secondary-projects {
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
-}
-
-.secondary-project-tile {
+.project-tile {
   flex: 1;
-  margin: 20px;
+  margin: 1.25rem;
 }
 
-.secondary-project-tile img {
-  border-radius: 15px;
+.project-tile img {
+  border-radius: 0.938rem;
   max-width: 100%;
 }
 
-.secondary-project-tile .project-desc {
+.project-tile .project-desc {
   flex: 5;
+  overflow-wrap: break-word;
 }
 
 .image-link:hover {
-  border: 2px var(--secondary-color-white) solid;
+  border: 0.125rem var(--secondary-color-white) solid;
   border-radius: 0px;
   box-shadow: var(--box-shadow);
   display: inline-block;
-  padding: 10px 30px;
-}
-
-.section-links {
-  margin-top: 15px;
+  padding: 0.625rem 1.875rem;
 }
 
 .source-link {
@@ -256,24 +229,24 @@ section {
 }
 
 .contact-icons {
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .fab,
 .fas,
 .fa-solid {
   color: var(--primary-color-gray);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.5;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 /* Footer Styling */
 footer {
   background-color: var(--secondary-color-white);
   text-align: center;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 footer p {
@@ -284,12 +257,12 @@ footer p {
 @media screen and (max-width: 980px) {
   /* this will be applied on any screen smaller than 980px */
   h3 {
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 600;
   }
 
   .section-links {
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: center;
   }
 }
@@ -298,20 +271,20 @@ footer p {
 @media screen and (max-width: 768px) {
   /* this will be applied on any screen between 768px and 575px */
   h1 {
-    font-size: 120px;
+    font-size: 7.5rem;
   }
 
   h2 {
-    font-size: 52px;
+    font-size: 3.25;
     text-align: center;
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   p {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -326,16 +299,11 @@ footer p {
   .about-image img {
     border-radius: 50%;
     max-width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   .about-text {
     flex: 10;
-  }
-
-  .project-tile-primary .project-image {
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   .section-links {
@@ -348,28 +316,15 @@ footer p {
 @media screen and (max-width: 575px) {
   /* this will be applied on any screen smaller than 575px */
   h1 {
-    font-size: 80px;
+    font-size: 5rem;
     text-align: center;
   }
 
   h2 {
-    font-size: 5vh;
-  }
-
-  .flex-container {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-  }
-
-  .secondary-projects {
-    padding-bottom: 0;
-  }
-  .secondary-project-tile {
-    margin: 20px auto;
+    font-size: 3rem;
   }
 
   .section-links {
-    font-size: 22px;
+    font-size: 0.9rem;
   }
 }
