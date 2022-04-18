@@ -63,42 +63,6 @@ section {
   padding: 60px;
 }
 
-/* Header Styling */
-header {
-  background-color: var(--secondary-color-white);
-  display: flex;
-  justify-content: flex-start;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-}
-
-header a {
-  text-decoration: none;
-  color: var(--nav-color);
-}
-
-header a:hover {
-  color: var(--nav-color-active);
-}
-
-header nav {
-  margin: 10px 0;
-}
-
-header nav ul {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-}
-
-header nav ul li {
-  padding: 5px 15px;
-}
-
 /* Hero Section Styling */
 .hero {
   align-items: center;
@@ -121,15 +85,14 @@ header nav ul li {
 
 .hero-cta,
 .hero-button {
-  margin: 20px;
+  margin: 1.25rem;
   mix-blend-mode: overlay;
   text-shadow: var(--text-shadow);
 }
 
 .hero-cta p {
   color: var(--secondary-color-white);
-  font-size: 24px;
-  text-align: center;
+  font-size: 1.5rem;
 }
 
 /* Hero Button & Section Button Styling */
@@ -260,7 +223,6 @@ header nav ul li {
 
 .secondary-project-tile .project-desc {
   flex: 5;
-  text-align: center;
 }
 
 .image-link:hover {
@@ -273,6 +235,16 @@ header nav ul li {
 
 .section-links {
   margin-top: 15px;
+}
+
+.source-link {
+  color: var(--secondary-color-white);
+  text-decoration: underline;
+}
+
+.source-link:hover {
+  color: var(--secondary-color-white);
+  text-shadow: 0 0 5px var(--secondary-color-white);
 }
 
 /* Contact Section Styling */
@@ -288,7 +260,8 @@ header nav ul li {
 }
 
 .fab,
-.fas {
+.fas,
+.fa-solid {
   color: var(--primary-color-gray);
   font-size: 32px;
   font-weight: 500;

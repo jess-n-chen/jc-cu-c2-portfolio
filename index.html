@@ -8,13 +8,24 @@
       name="description"
       content="Jessica Chen | A developer from New York"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/ec09384b84.js"
       crossorigin="anonymous"
@@ -23,22 +34,48 @@
   </head>
   <body>
     <!-- navigation menu -->
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="/" title="Back to Top">👩‍💻 home</a>
-          </li>
-          <li>
-            <a href="#about-me" title="About Me Page">about me</a>
-          </li>
-          <li>
-            <a href="#my-work" title="My Work Page">my work</a>
-          </li>
-          <li>
-            <a href="#contact-me" title="Contact Me Page">contact me</a>
-          </li>
-        </ul>
+    <header class="navigation-bar fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">👩‍💻 jc</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-light bg-light">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/"
+                  title="Homepage"
+                  >home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me" title="About Page"
+                  >about</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#my-work" title="Work Page">work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-me" title="Contact Page"
+                  >contact me</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- hero section -->
@@ -58,7 +95,7 @@
       </video>
 
       <!-- hero text overlay -->
-      <div class="hero-cta">
+      <div class="hero-cta text-center">
         <h1>jessica chen</h1>
         <p>a developer-in-training based in New York</p>
       </div>
@@ -109,89 +146,114 @@
         <div class="section-title-secondary">
           <h2>My Work</h2>
         </div>
-        <article class="project-tile-primary flex-container">
-          <div class="project-image">
-            <a
-              href="https://muchbetterdictionary.github.io/MuchBetterDictionary/"
-              target="_blank"
-              class="image-link"
-              title="MuchBetterDictionary App Project"
-            >
-              <img
-                src="./assets/images/MuchBetterDictionary.png"
-                alt="MuchBetterDictionary App Image"
-              />
-            </a>
-          </div>
-          <div class="project-desc">
-            <h3>MuchBetterDictionary</h3>
-            <p>
-              A dictionary app written with Branden Medary, Maame Sekyere, and
-              Ross Thompson in HTML, CSS, Foundations, JQuery, and Bootstrap.
-            </p>
-            <a
-              href="https://muchbetterdictionary.github.io/MuchBetterDictionary/"
-              target="_blank"
-              class="section-links"
-              title="MuchBetterDictionary App Link"
-              >Launch MuchBetterDictionary</a
-            >
-          </div>
-        </article>
-        <div class="secondary-projects">
-          <article class="secondary-project-tile">
-            <a
-              href="https://xenodochial-visvesvaraya-32ca77.netlify.app/"
-              target="_blank"
-              class="image-link"
-              title="Weather App Link"
-            >
-              <img
-                src="./assets/images/weather-1.png"
-                alt="Weather App Image"
-              />
-            </a>
+        <div class="row mx-3">
+          <article class="project-tile-primary flex-container">
+            <div class="project-image">
+              <a
+                href="https://muchbetterdictionary.github.io/MuchBetterDictionary/"
+                target="_blank"
+                class="image-link"
+                title="MuchBetterDictionary App Project"
+              >
+                <img
+                  src="./assets/images/MuchBetterDictionary.png"
+                  alt="MuchBetterDictionary App Image"
+                />
+              </a>
+            </div>
             <div class="project-desc">
-              <div class="desc">
+              <h3>MuchBetterDictionary</h3>
+              <p>
+                A dictionary app written with Branden Medary, Maame Sekyere, and
+                Ross Thompson in HTML, CSS, Foundations, JQuery, and Bootstrap.
+              </p>
+              <p>
+                <a
+                  class="source-link"
+                  href="https://github.com/MuchBetterDictionary/MuchBetterDictionary"
+                  target="_blank"
+                  title="MuchBetterDictionary App Source Code Link"
+                  >Source Code</a
+                >
+              </p>
+              <a
+                href="https://muchbetterdictionary.github.io/MuchBetterDictionary/"
+                target="_blank"
+                class="section-links"
+                title="MuchBetterDictionary App Link"
+                >Launch MuchBetterDictionary</a
+              >
+            </div>
+          </article>
+        </div>
+        <div class="row mx-3">
+          <div class="col-md-6 mb-4">
+            <article class="secondary-project-tile">
+              <a
+                href="https://xenodochial-visvesvaraya-32ca77.netlify.app/"
+                target="_blank"
+                class="image-link"
+                title="Weather App Link"
+              >
+                <img
+                  src="./assets/images/weather-1.png"
+                  alt="Weather App Image"
+                />
+              </a>
+              <div class="project-desc">
                 <h3>Weather App</h3>
                 <p>
                   A weather app written in Vanilla JS and Bootstrap that
                   provides real-time data!
                 </p>
-              </div>
-              <div class="link">
+                <p>
+                  <a
+                    class="source-link"
+                    href="https://github.com/jess-n-chen/my-awesome-weather-app"
+                    target="_blank"
+                    title="Weather App Source Code Link"
+                    >Source Code</a
+                  >
+                </p>
                 <a
                   href="https://xenodochial-visvesvaraya-32ca77.netlify.app/"
                   target="_blank"
                   class="section-links"
                   title="Weather App Link"
                 >
-                  Launch Weather (JS) App
+                  Launch Weather App
                 </a>
               </div>
-            </div>
-          </article>
-          <article class="secondary-project-tile">
-            <a
-              href="https://priceless-payne-e728b9.netlify.app/"
-              target="_blank"
-              class="image-link"
-              title="Dictionary App Link"
-            >
-              <img
-                src="./assets/images/dictionary-app.png"
-                alt="Dictionary App Image"
-              />
-            </a>
-            <div class="project-desc">
-              <div class="desc">
+            </article>
+          </div>
+          <div class="col-md-6 mb-4">
+            <article class="secondary-project-tile">
+              <a
+                href="https://priceless-payne-e728b9.netlify.app/"
+                target="_blank"
+                class="image-link"
+                title="Dictionary App Link"
+              >
+                <img
+                  src="./assets/images/dictionary-app.png"
+                  alt="Dictionary App Image"
+                />
+              </a>
+              <div class="project-desc">
                 <h3>Dictionary App</h3>
                 <p>
                   A dictionary app written with React.JS to help you learn
                   unknown words faster!
                 </p>
-              </div>
-              <div class="link">
+                <p>
+                  <a
+                    class="source-link"
+                    href="https://github.com/jess-n-chen/dictionary-app-react"
+                    target="_blank"
+                    title="Dictionary App Source Code Link"
+                    >Source Code</a
+                  >
+                </p>
                 <a
                   href="https://priceless-payne-e728b9.netlify.app/"
                   target="_blank"
@@ -200,39 +262,85 @@
                   >Launch Dictionary App</a
                 >
               </div>
-            </div>
-          </article>
-          <article class="secondary-project-tile">
-            <a
-              href="https://jolly-babbage-c61314.netlify.app/"
-              target="_blank"
-              class="image-link"
-              title="Weather App React Link"
-            >
-              <img
-                src="./assets/images/weather.png"
-                alt="Weather App V2 Image"
-              />
-            </a>
-            <div class="project-desc">
-              <div class="desc">
+            </article>
+          </div>
+          <div class="col-md-6 mb-4">
+            <article class="secondary-project-tile">
+              <a
+                href="https://jess-n-chen.github.io/jc-cu-c4-code-quiz/"
+                target="_blank"
+                class="image-link"
+                title="Coding Quiz App Link"
+              >
+                <img
+                  src="./assets/images/coding-quiz-challenge.png"
+                  alt="Coding Quiz App Image"
+                />
+              </a>
+              <div class="project-desc">
+                <h3>Coding Quiz App</h3>
+                <p>
+                  A coding quiz app written in vanilla JS to test your knowledge
+                  on Javascript!
+                </p>
+                <p>
+                  <a
+                    class="source-link"
+                    href="https://github.com/jess-n-chen/jc-cu-c4-code-quiz"
+                    target="_blank"
+                    title="Coding Quiz App Source Code Link"
+                    >Source Code</a
+                  >
+                </p>
+                <a
+                  href="https://priceless-payne-e728b9.netlify.app/"
+                  target="_blank"
+                  class="section-links"
+                  title="Dictionary App Link"
+                >
+                  Launch Quiz App
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 mb-4">
+            <article class="secondary-project-tile">
+              <a
+                href="https://jolly-babbage-c61314.netlify.app/"
+                target="_blank"
+                class="image-link"
+                title="Weather App React Link"
+              >
+                <img
+                  src="./assets/images/weather.png"
+                  alt="Weather App V2 Image"
+                />
+              </a>
+              <div class="project-desc">
                 <h3>Weather App</h3>
                 <p>
                   Another version of my weather app written in React.JS that
                   provides real-time data!
                 </p>
-              </div>
-              <div class="link">
+                <p>
+                  <a
+                    class="source-link"
+                    href="https://github.com/jess-n-chen/weather-app-react-js"
+                    target="_blank"
+                    title="Weather App Source Code Link"
+                    >Source Code</a
+                  >
+                </p>
                 <a
                   href="https://jolly-babbage-c61314.netlify.app/"
                   target="_blank"
                   class="section-links"
                   title="Weather App React Link"
-                  >Launch Weather (React) App</a
+                  >Launch Weather App</a
                 >
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -247,7 +355,7 @@
           <p>
             Github:
             <a
-              href="https://github.com/jess-n-chen/jc-cu-c2-portfolio"
+              href="https://github.com/jess-n-chen"
               target="_blank"
               title="Github Link"
             >
@@ -272,6 +380,26 @@
             Email:
             <a href="mailto:jessicachen28@gmail.com" title="Email Link">
               <i class="fas fa-paper-plane"></i>
+            </a>
+          </p>
+        </div>
+        <div class="contact-icons">
+          <p>
+            Phone:
+            <a href="tel:585-317-0623" title="Phone Link">
+              <i class="fas fa-phone"></i>
+            </a>
+          </p>
+        </div>
+        <div class="contact-icons">
+          <p>
+            Resume:
+            <a
+              href="./assets/docs/Jessica_Chen-Resume_2022.pdf"
+              target="_blank"
+              title="Resume Link"
+            >
+              <i class="fas fa-file"></i>
             </a>
           </p>
         </div>
