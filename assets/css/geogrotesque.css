@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "GeogrotesqueRegular";
+  src: url("../fonts/Geogrotesque-Regular.eot");
+  src: url("../fonts/Geogrotesque-Regular.eot#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geogrotesque-Regular.woff") format("woff"),
+    url("../fonts/Geogrotesque-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GeogrotesqueSemibold";
+  src: url("../fonts/Geogrotesque-Semibold.eot");
+  src: url("../fonts/Geogrotesque-Semibold.eot#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geogrotesque-Semibold.woff") format("woff"),
+    url("../fonts/Geogrotesque-Semibold.ttf") format("truetype");
+}
